@@ -25,7 +25,7 @@ const AboutMe = () => {
               Designer
             </h2>
             <p className="text-sm lg:pt-7 md:pt-4 pt-7 font-medium md:text-sm lg:text-base transition-opacity duration-300 text-[#FFFFFF]">
-              I'm MD Zohaib Memon, a graphic designer with a passion for
+              I&apos;m MD Zohaib Memon, a graphic designer with a passion for
               crafting distinctive brand identities and visuals that tell
               engaging stories.
             </p>

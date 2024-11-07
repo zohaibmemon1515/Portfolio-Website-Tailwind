@@ -11,7 +11,7 @@ const Contact = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleAlert = (event:any) => {
+  const handleAlert = (event: React.FormEvent<HTMLFormElement>) => {
     event.preventDefault();
     alert("Thank You for your response!");
     console.log("Button clicked");

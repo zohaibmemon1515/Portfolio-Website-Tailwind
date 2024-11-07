@@ -1,25 +1,24 @@
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect } from "react";
 
-export const Carousel: React.FC<{ children: React.ReactNode }> = ({ children }) => {
-  const [currentIndex, setCurrentIndex] = useState(0);
+export const Carousel: React.FC<{ children: React.ReactNode }> = ({
+  children,
+}) => {
+  const [, setCurrentIndex] = useState(0);
   const totalSlides = React.Children.count(children);
 
- 
   const nextSlide = () => {
     setCurrentIndex((prev) => (prev + 1) % totalSlides);
   };
 
-  
   const prevSlide = () => {
-    setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);  
+    setCurrentIndex((prev) => (prev - 1 + totalSlides) % totalSlides);
   };
 
-
   useEffect(() => {
-    const autoplay = setInterval(nextSlide, 2000); 
+    const autoplay = setInterval(nextSlide, 2000);
 
     return () => {
-      clearInterval(autoplay); 
+      clearInterval(autoplay);
     };
   }, []);
 
@@ -31,17 +30,20 @@ export const Carousel: React.FC<{ children: React.ReactNode }> = ({ children }) 
   );
 };
 
-const CarouselNavigation: React.FC<{ onPrev: () => void; onNext: () => void }> = ({ onPrev, onNext }) => (
+const CarouselNavigation: React.FC<{
+  onPrev: () => void;
+  onNext: () => void;
+}> = ({ onPrev, onNext }) => (
   <>
     <CarouselPrevious onClick={onPrev}>Previous</CarouselPrevious>
     <CarouselNext onClick={onNext}>Next</CarouselNext>
   </>
 );
 
-export const CarouselContent: React.FC<{ children: React.ReactNode; activeIndex: number }> = ({
-  children,
-  activeIndex,
-}) => {
+export const CarouselContent: React.FC<{
+  children: React.ReactNode;
+  activeIndex: number;
+}> = ({ children, activeIndex }) => {
   return (
     <div className="flex transition-transform duration-300 ease-in-out">
       {React.Children.map(children, (child, index) => {
@@ -55,23 +57,25 @@ export const CarouselContent: React.FC<{ children: React.ReactNode; activeIndex:
   );
 };
 
-export const CarouselItem: React.FC<{ children: React.ReactNode; active?: boolean }> = ({
-  children,
-  active = false,
-}) => {
+export const CarouselItem: React.FC<{
+  children: React.ReactNode;
+  active?: boolean;
+}> = ({ children, active = false }) => {
   return (
     <div
-      className={`w-full ${active ? 'opacity-100' : 'opacity-0'} transition-opacity duration-500`}
+      className={`w-full ${
+        active ? "opacity-100" : "opacity-0"
+      } transition-opacity duration-500`}
     >
       {children}
     </div>
   );
 };
 
-export const CarouselNext: React.FC<{ onClick: () => void; children: React.ReactNode }> = ({
-  onClick,
-  children,
-}) => {
+export const CarouselNext: React.FC<{
+  onClick: () => void;
+  children: React.ReactNode;
+}> = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}
@@ -82,10 +86,10 @@ export const CarouselNext: React.FC<{ onClick: () => void; children: React.React
   );
 };
 
-export const CarouselPrevious: React.FC<{ onClick: () => void; children: React.ReactNode }> = ({
-  onClick,
-  children,
-}) => {
+export const CarouselPrevious: React.FC<{
+  onClick: () => void;
+  children: React.ReactNode;
+}> = ({ onClick, children }) => {
   return (
     <button
       onClick={onClick}

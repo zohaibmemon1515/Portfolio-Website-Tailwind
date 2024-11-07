@@ -15,13 +15,13 @@ export default function Hero() {
           <div className="col-span-12 md:col-span-6 lg:col-span-6 lg:pl-24 md:pl-10 pl-8 lg:mr-5 md:mr-2 mr-14 md:pt-4 lg:pt-4 pt-24 md:h-[22rem] lg:h-[24rem] flex flex-col justify-between">
             <div>
               <h2 className="text-[#F86F03] font-semibold lg:text-2xl md:text-xl text-lg font-emoji">
-                Hi, It's me
+                Hi, It&apos;s me
               </h2>
               <h1 className="text-[#FFFFFF] font-bold lg:text-4xl md:text-3xl text-3xl font-roboto md:font-bold mt-0.5">
                 MD ZOHAIB MEMON
               </h1>
               <h2 className="text-[#FFFFFF] font-semibold lg:text-2xl md:text-xl text-lg font-emoji mt-2 inline-flex items-center">
-                And I'm a
+                And I&apos;m a
                 <span className="text-[#F86F03] ml-2">
                   <Typewriter
                     options={{
@@ -33,8 +33,8 @@ export default function Hero() {
                 </span>
               </h2>
               <p className="text-[#FFFFFF] font-medium lg:text-base md:text-sm text-sm font-emoji mt-3 w-full max-w-full break-words leading-normal whitespace-normal">
-                I combine design with clean code to craft visuals and smooth,
-                user-friendly websites that are both beautiful and effective.
+                I combine design with clean code to craft visuals and smooth&#39;
+                user-friendly websites that are both beautiful and effective&rsquo;
               </p>
 
               <div className="flex justify-start items-center gap-x-5 mt-5">

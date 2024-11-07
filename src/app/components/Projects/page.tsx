@@ -3,9 +3,7 @@
 import React, { useRef, useEffect, useState } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-import { title } from "process";
-import { Description } from "@radix-ui/react-dialog";
-import { link } from "fs";
+import Image from "next/image";
 
 type ProjectCardProps = {
   image: string;
@@ -23,7 +21,13 @@ const ProjectCard: React.FC<ProjectCardProps> = ({
   return (
     <div className="relative w-80 h-[11.5rem] overflow-hidden rounded-xl shadow-lg transition-shadow duration-300 group">
       <div className="absolute inset-0 transform transition-transform duration-500 group-hover:-translate-y-full">
-        <img src={image} alt={title} className="w-full h-full object-cover" />
+        <Image
+          src={image}
+          alt={title}
+          className="w-full h-full object-cover"
+          width={500}
+          height={300}
+        />
       </div>
       <div className="absolute inset-0 bg-black bg-opacity-40 text-white flex flex-col items-center justify-center gap-3 p-4 transform translate-y-full transition-transform duration-500 group-hover:translate-y-0">
         <h1 className="text-xl font-semibold text-[#F86F03] text-center">

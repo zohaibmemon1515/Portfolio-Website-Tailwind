@@ -3,12 +3,7 @@
 import React, { useRef, useEffect } from "react";
 import useEmblaCarousel from "embla-carousel-react";
 import Autoplay from "embla-carousel-autoplay";
-
-import {
-  GraphicDesignCard,
-  FrontendDevelopmentCard,
-  VideoEditingCard,
-} from "../ServicesCard/page";
+import ServiceCard from "../ServicesCard/page";
 
 const Services: React.FC = () => {
   const [emblaRef, embla] = useEmblaCarousel({ loop: true, align: "center" }, [
@@ -53,17 +48,7 @@ const Services: React.FC = () => {
           className="embla container lg:max-w-[53rem] md:max-w-[38rem]  mt-4 px-10 lg:px-[6rem] md:px-6 pt-20 relative overflow-hidden rounded-xl"
           ref={emblaRef}
         >
-          <div className="embla__container flex mt-11">
-            <div className="embla__slide flex justify-center cursor-pointer min-w-full md:min-w-[25rem] lg:min-w-[26rem]">
-              <GraphicDesignCard />
-            </div>
-            <div className="embla__slide flex justify-center cursor-pointer min-w-full md:min-w-[25rem] lg:min-w-[26rem]">
-              <FrontendDevelopmentCard />
-            </div>
-            <div className="embla__slide flex justify-center cursor-pointer min-w-full md:min-w-[25rem] lg:min-w-[26rem]">
-              <VideoEditingCard />
-            </div>
-          </div>
+          <ServiceCard />
 
           <button
             ref={prevRef}

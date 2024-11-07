@@ -142,7 +142,7 @@ const Projects: React.FC = () => {
       description:
         "Eye-catching thumbnail designs that drive clicks and boost your content's visibility.",
       link: "https://www.behance.net/gallery/208460947/Thumbnail-Design",
-      image: "/assests/img/thumbnail.jpg",
+      image: "/assests/img/Thumbnail.jpg",
     },
     {
       title: "Vector Illustration",
@@ -156,7 +156,7 @@ const Projects: React.FC = () => {
       description:
         "Stylish icon designs that enhance your brand and improve user experience.",
       link: "https://www.behance.net/gallery/211619317/Icons-Design",
-      image: "/assests/img/icons.jpg",
+      image: "/assests/img/Icons.jpg",
     },
     {
       title: "COMING SOON.....",

@@ -142,21 +142,21 @@ const Projects: React.FC = () => {
       description:
         "Eye-catching thumbnail designs that drive clicks and boost your content's visibility.",
       link: "https://www.behance.net/gallery/208460947/Thumbnail-Design",
-      image: "/assests/img/Thumbnail.jfif",
+      image: "/assests/img/thumbnail.jpg",
     },
     {
       title: "Vector Illustration",
       description:
         "Custom vector illustrations that bring your ideas to life with vibrant detail and style.",
       link: "https://www.behance.net/gallery/208461319/Vector-Cartoon",
-      image: "/assests/img/Vector.Avif",
+      image: "/assests/img/Vector.jpg",
     },
     {
       title: "Icons Design",
       description:
         "Stylish icon designs that enhance your brand and improve user experience.",
       link: "https://www.behance.net/gallery/211619317/Icons-Design",
-      image: "/assests/img/Icons.jfif",
+      image: "/assests/img/icons.jpg",
     },
     {
       title: "COMING SOON.....",

@@ -219,13 +219,13 @@ const Projects: React.FC = () => {
 
         <button
           ref={prevRef}
-          className="absolute top-[-5rem] lg:left-[22rem] md:left-[22rem] left-[10rem] transform -translate-y-0 cursor-pointer z-10 text-white text-3xl rounded-xl p-1 !bg-[#f86f03]"
+          className="absolute top-[-5rem] lg:left-[22rem] md:left-[22rem] left-[7rem] transform -translate-y-0 cursor-pointer z-10 text-white text-3xl rounded-xl p-1 !bg-[#f86f03]"
         >
           &lt;
         </button>
         <button
           ref={nextRef}
-          className="absolute top-[-5rem] lg:right-[22rem] md:right-[22rem] right-[10rem] transform -translate-y-0 cursor-pointer z-10  text-white text-3xl rounded-xl p-1 !bg-[#f86f03]"
+          className="absolute top-[-5rem] lg:right-[22rem] md:right-[22rem] right-[7rem] transform -translate-y-0 cursor-pointer z-10  text-white text-3xl rounded-xl p-1 !bg-[#f86f03]"
         >
           &gt;
         </button>

@@ -36,7 +36,9 @@ const AboutMe = () => {
 
             <div className=" lg:pt-7 md:pt-4 pt-7">
             <button className="text-[#31065A] rounded-full bg-[#FFFFFF] px-6 py-2 font-semibold transition-transform duration-300 hover:scale-105 focus:outline-none focus:ring-2 focus:ring-[#F86F03] focus:ring-opacity-50 hover:bg-[#F86F03] hover:text-white">
+              <a href="assests/Cv/GraphicCv.pdf">
               Read More...
+              </a>
             </button>
           </div>
           </div>
